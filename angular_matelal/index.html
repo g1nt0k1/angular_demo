@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app="AngularMaterialStartGuide">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <title>Angular Material</title>
+</head>
+<body>
+    <div layout="row" layout-align="center">
+        <md-input-container flex="20">
+            <label>TEXTの入力欄です。</label>
+            <input type="text" ng-model="inputText">
+        </md-input-container>
+        <md-input-container flex="20">
+            <label>SELECTの選択欄です。</label>
+            <md-select ng-model="selectList">
+                <md-option value="TEST1">テスト1</md-option>
+                <md-option value="TEST2">テスト2</md-option>
+                <md-option value="TEST3">テスト3</md-option>
+                <md-option value="TEST4">テスト4</md-option>
+            </md-select>
+        </md-input-container>
+    </div>
+    <div layout="row" layout-align="center">
+        <md-radio-group ng-model="radioBtns">
+            <md-radio-button value="RADIO_A">ラジオボタンA</md-radio-button>
+            <md-radio-button value="RADIO_B">ラジオボタンB</md-radio-button>
+        </md-radio-group>
+    </div>
+    <!-- ScriptLink -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
